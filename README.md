@@ -9,6 +9,8 @@ A zero-build, zero-dependency webpage that reads from a published Google Sheet a
 
 ---
 
+**New to SheetPage?** Read the full [Team Setup Tutorial](TUTORIAL.md) — covers everything from Google Sheet setup to custom domains and themes.
+
 ## Why SheetPage?
 
 Most teams already use Google Sheets and Drive. SheetPage removes the friction of building a website — just fill in a spreadsheet, publish it, and deploy a static page. No backend, no database, no build tools.
@@ -144,6 +146,8 @@ All text on the page is configurable:
 siteTitle: "Engineering Resources",
 siteSubtitle: "Internal presentations and documents",
 footerText: "Maintained by the Engineering team",
+logoUrl: "assets/logo.png",
+logoAlt: "Our Team Logo",
 downloadLabel: "Get PDF",
 formHeading: "Add a Resource",
 formDescription: "Submit a new document for the team.",

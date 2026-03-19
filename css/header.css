@@ -8,6 +8,11 @@
   border-bottom: 1px solid var(--color-border);
 }
 
+.sp-header__logo {
+  max-height: var(--logo-height, 60px);
+  margin-bottom: var(--space-sm);
+}
+
 .sp-header__title {
   font-size: var(--font-size-2xl);
   font-weight: 700;

@@ -208,6 +208,14 @@
     if (cfg.formHeading && formHeading) formHeading.textContent = cfg.formHeading;
     if (cfg.formDescription && formDesc) formDesc.textContent = cfg.formDescription;
 
+    // Logo
+    var logoEl = document.getElementById("site-logo");
+    if (cfg.logoUrl && logoEl) {
+      logoEl.src = cfg.logoUrl;
+      logoEl.alt = cfg.logoAlt || cfg.siteTitle || "Logo";
+      logoEl.hidden = false;
+    }
+
     if (cfg.siteTitle) document.title = cfg.siteTitle;
     if (cfg.cardMinWidth) document.documentElement.style.setProperty("--card-min-width", cfg.cardMinWidth);
   }

@@ -19,6 +19,11 @@ const SheetPageConfig = {
   siteSubtitle: "Browse and download team presentations",
   footerText: "Powered by Google Sheets",
 
+  // Path or URL to a logo image. Leave empty for no logo.
+  logoUrl: "",
+  // Alt text for the logo (for accessibility)
+  logoAlt: "",
+
   // ── Form Section ────────────────────────────────────────────
   formHeading: "Submit a Presentation",
   formDescription: "Use the form below to add a new presentation to the collection.",
