@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SheetPage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="sp-header">
+    <h1 class="sp-header__title">Team Presentations</h1>
+    <p class="sp-header__subtitle">Browse and download team presentations</p>
+  </header>
+
+  <main class="sp-main">
+    <section class="sp-filters" id="filters">
+      <select class="sp-filters__select" id="category-filter" aria-label="Filter by category">
+        <option value="">All Categories</option>
+      </select>
+    </section>
+
+    <section class="sp-grid" id="cards-container">
+      <p class="sp-grid__message" id="loading">Loading presentations...</p>
+    </section>
+
+    <section class="sp-form-section" id="form-section">
+      <h2 class="sp-form-section__heading">Submit a Presentation</h2>
+      <p class="sp-form-section__desc">Use the form below to add a new presentation to the collection.</p>
+      <div id="form-container">
+        <p class="sp-form-section__placeholder" id="form-placeholder">
+          Configure <code>formEmbedUrl</code> in config.js to enable the submission form.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sp-footer">
+    <p>Powered by Google Sheets</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

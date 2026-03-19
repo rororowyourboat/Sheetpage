@@ -1,0 +1,103 @@
+/* ============================================================
+   Card Grid
+   ============================================================ */
+.sp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--card-min-width), 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+.sp-grid__message {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--color-text-secondary);
+  padding: var(--space-2xl) 0;
+}
+
+/* ── Card ───────────────────────────────────────────────────── */
+.sp-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+}
+
+.sp-card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+}
+
+/* Thumbnail */
+.sp-card__thumb {
+  width: 100%;
+  height: var(--card-thumb-height);
+  object-fit: cover;
+  background: var(--color-placeholder-bg);
+}
+
+.sp-card__thumb-placeholder {
+  width: 100%;
+  height: var(--card-thumb-height);
+  background: var(--color-placeholder-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  font-size: 2.5rem;
+}
+
+/* Body */
+.sp-card__body {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sp-card__category {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+}
+
+.sp-card__title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.sp-card__desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  flex: 1;
+  margin-bottom: var(--space-md);
+}
+
+.sp-card__download {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: var(--color-accent);
+  color: #fff;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  text-align: center;
+  transition: background var(--transition-fast);
+}
+
+.sp-card__download:hover {
+  background: var(--color-accent-hover);
+}
+
+@media (max-width: 600px) {
+  .sp-grid {
+    grid-template-columns: 1fr;
+  }
+}

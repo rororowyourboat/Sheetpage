@@ -1,0 +1,16 @@
+/* ============================================================
+   Filters
+   ============================================================ */
+.sp-filters {
+  margin-bottom: var(--space-lg);
+}
+
+.sp-filters__select {
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-size-base);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+  cursor: pointer;
+}

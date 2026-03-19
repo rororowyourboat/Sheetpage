@@ -1,0 +1,38 @@
+/* ============================================================
+   Form Section
+   ============================================================ */
+.sp-form-section {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-xl);
+  margin-top: var(--space-md);
+}
+
+.sp-form-section__heading {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-sm);
+}
+
+.sp-form-section__desc {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.sp-form-section__iframe {
+  width: 100%;
+  min-height: 600px;
+  border: none;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.sp-form-section__placeholder {
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.sp-form-section__placeholder code {
+  background: var(--color-placeholder-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+}
