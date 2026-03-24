@@ -1,0 +1,101 @@
+/* ============================================================
+   Pages Listing — Home view showing available pages (sheet tabs)
+   ============================================================ */
+.sp-pages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+.sp-page-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  cursor: pointer;
+  transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+  box-shadow: var(--shadow-card);
+  text-decoration: none;
+  color: inherit;
+}
+
+.sp-page-card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+}
+
+.sp-page-card__icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.sp-page-card__title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+}
+
+.sp-page-card__desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height);
+  flex: 1;
+}
+
+.sp-page-card__meta {
+  font-size: var(--font-size-xs);
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+/* ── Breadcrumb / Back Navigation ──────────────────────────── */
+.sp-breadcrumb {
+  margin-bottom: var(--space-lg);
+}
+
+.sp-breadcrumb__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-accent);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  transition: background var(--transition-fast);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sp-breadcrumb__link:hover {
+  background: var(--color-bg);
+}
+
+/* ── Page Title ────────────────────────────────────────────── */
+.sp-page-header {
+  margin-bottom: var(--space-xl);
+}
+
+.sp-page-header__title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
+
+.sp-page-header__desc {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  max-width: 640px;
+  line-height: var(--line-height);
+}
+
+@media (max-width: 600px) {
+  .sp-pages-grid {
+    grid-template-columns: 1fr;
+  }
+}

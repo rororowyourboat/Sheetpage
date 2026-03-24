@@ -14,15 +14,19 @@
   </header>
 
   <main class="sp-main">
+    <nav class="sp-breadcrumb" id="breadcrumb" hidden>
+      <a class="sp-breadcrumb__link" href="#">&larr; All Pages</a>
+    </nav>
+
     <section class="sp-filters" id="filters">
       <select class="sp-filters__select" id="category-filter" aria-label="Filter by category">
         <option value="">All Categories</option>
       </select>
     </section>
 
-    <section class="sp-grid" id="cards-container">
+    <div id="cards-container">
       <p class="sp-grid__message" id="loading">Loading presentations...</p>
-    </section>
+    </div>
 
     <section class="sp-form-section" id="form-section">
       <h2 class="sp-form-section__heading">Submit a Presentation</h2>
